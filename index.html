@@ -114,7 +114,7 @@
                         <span class="font-black text-xl cinzel">K</span>
                     </div>
                     <div>
-                        <p class="text-[10px] font-extrabold tracking-[0.3em] text-orange-500 uppercase cinzel">Pro Academy</p>
+                        <p class="text-[10px] font-extrabold tracking-[0.3em] text-orange-500 uppercase cinzel">Pro Academy Quiz</p>
                         <h2 id="questTitle" class="text-sm font-bold text-white/90">Initialization...</h2>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
     </main>
 
     <footer class="p-6 text-center text-white/20 text-[10px] font-bold tracking-widest uppercase cinzel">
-        Kroma International Board of Design &copy; 2026
+        Kroma - New era of Design &copy; 2026
     </footer>
 
     <script>
@@ -429,7 +429,7 @@
             const container = document.getElementById('app-content');
             container.innerHTML = `
                 <div class="text-center">
-                    <h2 class="text-5xl font-black mb-2 cinzel">GRADUATION</h2>
+                    <h2 class="text-5xl font-black mb-2 cinzel">Quiz Completed</h2>
                     <p class="text-orange-500 font-bold tracking-[0.3em] uppercase text-xs mb-8">Verification Complete.</p>
                     <div class="mb-8 overflow-hidden rounded-xl shadow-2xl">
                         <canvas id="certCanvas" width="2000" height="1500"></canvas>
@@ -437,8 +437,8 @@
                     </div>
                     <div class="space-y-4 max-w-sm mx-auto">
                         <input type="text" id="certName" placeholder="CANDIDATE LEGAL NAME" class="w-full p-4 glass text-center font-bold tracking-widest outline-none focus:border-orange-500 uppercase">
-                        <button onclick="renderFinalCert()" class="w-full btn-action py-4 rounded-xl font-black text-sm uppercase">Issue Royal Diploma</button>
-                        <a id="dl" download="Kroma_Official_Diploma.png" class="hidden block text-orange-500 font-bold underline mt-4 cinzel">Download Legal Credential</a>
+                        <button onclick="renderFinalCert()" class="w-full btn-action py-4 rounded-xl font-black text-sm uppercase">Issue Certificate</button>
+                        <a id="dl" download="Kroma_Official_certificate.png" class="hidden block text-orange-500 font-bold underline mt-4 cinzel">Download Certificate</a>
                         <button onclick="init()" class="text-white/20 text-[10px] font-bold tracking-widest uppercase mt-8 block mx-auto">Restart Academy</button>
                     </div>
                 </div>
@@ -455,10 +455,10 @@
             for(let i=0; i<60; i+=4) ctx.strokeRect(60+i, 60+i, 1880-i*2, 1380-i*2);
             ctx.strokeStyle = '#B8860B'; ctx.lineWidth = 15; ctx.strokeRect(100, 100, 1800, 1300);
             ctx.textAlign = 'center'; ctx.fillStyle = '#1A1A1A'; ctx.font = '700 45px "Cinzel"';
-            ctx.fillText('KROMA INTERNATIONAL ACADEMY', 1000, 280);
+            ctx.fillText('KROMA ACADEMY QUIZ', 1000, 280);
             ctx.font = 'italic 40px "Playfair Display"'; ctx.fillText('This is to certify that the Board of Governors confers upon', 1000, 480);
             ctx.font = '900 110px "Playfair Display"'; ctx.fillText(name, 1000, 680);
-            ctx.font = '700 70px "Cinzel"'; ctx.fillStyle = '#8B4513'; ctx.fillText('MASTER OF CHROMATIC SCIENCE', 1000, 920);
+            ctx.font = '700 70px "Cinzel"'; ctx.fillStyle = '#8B4513'; ctx.fillText('COMPLETED THE KROMA QUIZ', 1000, 920);
             
             // Gold Seal
             ctx.save(); ctx.translate(1000, 1280); ctx.fillStyle = '#DAA520';
